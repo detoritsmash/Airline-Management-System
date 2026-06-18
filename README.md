@@ -1,4 +1,4 @@
-
+```text
 airline-management-system/
 │
 ├── database/
@@ -18,3 +18,4 @@ airline-management-system/
 │
 ├── .gitignore
 └── README.md               # Documentation of the project
+

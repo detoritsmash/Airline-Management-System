@@ -1,8 +1,30 @@
-# Environments
-.env
+# 🐍 Python Environment & Dependencies
+scripts-python/venv/
+scripts-python/.venv/
 venv/
-__pycache__/
+.venv/
 
-# XAMPP/IDEs
+# Ignore compiled Python bytecode files
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📊 Generated Simulation & Analytics Assets
+*.png
+analytics_revenue_by_airline.png
+analytics_popular_routes.png
+
+*.csv
+*.xlsx
+
+# 🖥️ System & Editor Specific Files
 .vscode/
-config.php
+.history/
+
+# macOS system specific directory folders
+.DS_Store
+Thumbs.db
+
+# 🔒 Environment Secrets (Future-proofing)
+.env

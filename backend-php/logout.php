@@ -1,5 +1,5 @@
 <?php
-// 1. Core connection initialization
+
 require_once 'config/db.php';
 
 // 2. Clear all session variables from memory
