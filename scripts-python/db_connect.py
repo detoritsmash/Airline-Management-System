@@ -5,7 +5,7 @@ try:
         host="localhost",
         user="root",
         password="",
-        database="airline_db"
+        database="Airlines123123"
     )
     cursor = db.cursor()
     print("Successfully connected to the database!")

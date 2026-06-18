@@ -1,8 +1,12 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 $host = "localhost";
 $user = "root";
 $password = "";
-$dbname = "airline_db";
+$dbname = "Airlines123123";
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
