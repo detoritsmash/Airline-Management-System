@@ -2,8 +2,12 @@
 
 require_once 'config/db.php';
 
-//MOCK USER SESSION (Lock to Passenger #1: Rahul Kumar for testing consistency)
-$_SESSION['user_id'] = 1; 
+//CHECKING IF USER IS LOGGED IN OR NOT. IF NOT, REDIRECT TO LOGIN PAGE
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit;
+}
+
 $passenger_id = $_SESSION['user_id'];
 
 // This block runs ONLY when a user clicks a "Cancel Ticket" link, which passes ?cancel_booking_id=X in the URL

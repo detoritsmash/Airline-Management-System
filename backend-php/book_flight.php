@@ -2,8 +2,11 @@
 
 require_once 'config/db.php';
 
-//MOCK USER SESSION (Log in as Passenger #1: Rahul Kumar for testing)
-$_SESSION['user_id'] = 1; 
+//CHECKING IF USER IS LOGGED IN OR NOT. IF NOT, REDIRECT TO LOGIN PAGE
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit;
+}
 
 // If someone didn't click a flight from index.php, stop the script.
 if (!isset($_GET['flight_id'])) {
