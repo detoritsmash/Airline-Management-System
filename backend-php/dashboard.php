@@ -122,6 +122,7 @@ $bookings = $itinerary_stmt->get_result();
 
     <div class="navbar">
         <strong>Airline Management System</strong>
+        <a href="logout.php" style="color: #dc3545;">Logout</a>
         <a href="dashboard.php">My Bookings</a>
         <a href="index.php">Home</a>
     </div>
